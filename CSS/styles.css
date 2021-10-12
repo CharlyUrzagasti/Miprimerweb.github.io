@@ -1,0 +1,278 @@
+
+
+.contenedor{
+  
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: auto;
+  padding: 60px 0;
+}
+:root{
+  scroll-behavior: smooth;
+}
+.head{
+  padding: 0px;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+header{
+height: 100vh;
+background-image: linear-gradient(to top, #8cd1cb81 0%, #c2fbed73 100%), url(../img/portada.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
+.hamburguer{
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0,0,0,5);
+  cursor: pointer;
+}
+.contenedor head{
+
+  padding: 0%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+}
+.menu-navegacion {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  width: 30vw;
+  height: 100%;
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 0 6px rgba(0,0,0, .5) ;
+  transition: transform .3s ease-in-out;
+  transform: translate(110%);
+}
+
+
+.spread{
+  transform: translate(0);
+}
+.menu-navegacion a{
+  color:fffff;
+  text-decoration: none;
+}
+.titulo{
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+.copy{
+  font-weight: 300px;
+  font-size: 25px;
+}
+
+body{
+  
+font-family: 'Open Sans', sans-serif;
+
+}
+/*NUESTRO SERVICIO*/
+
+.subtitulo{
+  text-align: center;
+  font-weight: 300;
+  color: #9f8ad0;
+margin-bottom: 40px;
+font-size: 40px;
+
+}
+.contenedor-servicio{
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.contenedor-servicio img{
+width: 40%;
+
+}
+
+.checklist-servicio{
+width: 45%;
+}
+
+.service{
+  margin-bottom: 20px;
+}
+.n-service{
+margin-bottom: 7px;
+}
+.number{
+  display: inline-block;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  width: 30px;
+  height: 30px;
+  color: #ffff;
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.gallery{
+  background: #f2f2f2;
+}
+
+.contenedor-galeria{
+  display: flex;
+  justify-content: space-evenly;
+flex-wrap: wrap;
+  
+  
+}
+
+.img-galeria{
+ 
+  width: 30%;
+  display: block;
+margin-bottom: 15px;
+box-shadow: 0 0 6px;
+cursor: pointer;
+}
+
+
+.imagen-light{
+  position: fixed;
+  background: rgba(0, 0,0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform .2s ease-in-out;
+}
+.agregar-imagen{
+  width: 60%;
+  height: 70%;
+  border-radius: 10px;
+  transform: scale(0);
+  transition: transform .3s .2s;
+}
+.showImage{
+  transform: scale(1);
+}
+.show{
+  transform: translate(0);
+}
+
+.closeLight{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+.experts{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+.cont-expert{
+  width: 30%;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+.cont-expert img{
+
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.n-expert{
+  display: inline-block;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 400;
+}
+
+footer{
+
+  background: #9f8ad0;
+  padding-bottom: 0.1px;
+}
+
+.footer-content{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding-top: 60px;
+padding-bottom: 40px;
+
+}
+.contact-us{
+
+  width: 40%;
+  color:#fff;
+}
+
+.brand{
+  font-weight: 500;
+  font-size: 40px;
+}
+.brand+p{
+  font-weight: 500;
+}
+
+.social-media{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.social-media-icon{
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ffff;
+  border-radius: 50px;
+  text-align: center;
+  color: #ffff;
+
+}
+.social-media-icon:hover{
+
+  background: #ffff;
+  color: #764ba2
+}
+.social-media-icon i{
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.close{
+  
+  position:absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  width: 40px;
+}
